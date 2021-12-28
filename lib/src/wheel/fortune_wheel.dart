@@ -201,12 +201,10 @@ class FortuneWheel extends HookWidget implements FortuneWidget {
                       ),
                   ];
 
-                  return SizedBox.expand(
-                    child: _CircleSlices(
-                      items: transformedItems,
-                      wheelData: wheelData,
-                      styleStrategy: styleStrategy,
-                    ),
+                  return _CircleSlices(
+                    items: transformedItems,
+                    wheelData: wheelData,
+                    styleStrategy: styleStrategy,
                   );
                 });
               },
